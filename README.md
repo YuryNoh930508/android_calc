@@ -1,3 +1,4 @@
+#간단한 계산기
 APP MAIN VIEW
 ![MAIN LAYOUT](/app/pics/Screenshot_1479051781.png?raw=true)
 WHEN! addition
