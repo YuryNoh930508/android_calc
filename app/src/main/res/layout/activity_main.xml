@@ -49,8 +49,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/op4_divide" />
 
+    <Button
+        android:text="MOD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/op5_modulo" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/result" />
+
 </LinearLayout>

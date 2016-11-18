@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText num1, num2;
-    Button op1_plus, op2_minus, op3_multiply, op4_divide;
+    Button op1_plus, op2_minus, op3_multiply, op4_divide, op5_modulo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         op2_minus = (Button)findViewById(R.id.op2_minus);
         op3_multiply = (Button)findViewById(R.id.op3_multiply);
         op4_divide = (Button)findViewById(R.id.op4_divide);
+        op5_modulo = (Button)findViewById(R.id.op5_modulo);
         result = (TextView)findViewById(R.id.result);
 
         // assign click events to buttons
@@ -66,6 +67,16 @@ public class MainActivity extends AppCompatActivity {
                 double y = Double.parseDouble(num2.getText().toString());
 
                 result.setText(x + " / " + y + " = " + (double)(x/y));
+            }
+        });
+        op5_modulo.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                double x = Double.parseDouble(num1.getText().toString());
+                double y = Double.parseDouble(num2.getText().toString());
+
+                result.setText(x + " % " + y + " = " + (double)(x%y));
             }
         });
     }
